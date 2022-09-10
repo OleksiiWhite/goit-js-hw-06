@@ -7,6 +7,6 @@ form.addEventListener('submit', e => {
   if (email.value === '' || password.value === '') {
     return alert('Not all form fields are filled!');
   }
-  console.log(`Login: ${login.value}, Password: ${password.value}`);
-  e.currentTarget.removeEventListener();
+  console.log(`Login: ${email.value}, Password: ${password.value}`);
+  e.currentTarget.reset();
 });
